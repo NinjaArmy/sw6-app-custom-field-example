@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Manifest/Schema/manifest-1.0.xsd">
+    <meta>
+        <name>NINJACustomFieldExample</name>
+        <label>Custom Field Example</label>
+        <label lang="de-DE">Custom Field Example</label>
+        <author>Joschi Mehta</author>
+        <copyright>(c) by Ninja Army</copyright>
+        <version>1.0.0</version>
+        <license>MIT</license>
+    </meta>
+    <custom-fields>
+        <custom-field-set>
+            <name>ninja_example_set</name>
+            <label>Tab Label</label>
+            <label lang="de-DE">Tab Label</label>
+            <related-entities>
+                <product />
+            </related-entities>
+            <fields>
+                <bool name="ninja_custom_field_example">
+                    <position>1</position>
+                    <label>Custom field</label>
+                </bool>
+            </fields>
+        </custom-field-set>
+    </custom-fields>
+</manifest>
